@@ -22,9 +22,9 @@
   height: max-content;
   padding: 20px;
   display: flex;
+
   flex-direction: column;
   gap: 20px;
-  align-items: start;
 
   border-radius: 10px;
 }
@@ -68,13 +68,14 @@ button {
 }
 ul li {
   font-size: 18px;
-  line-height: 30px;
+
   list-style: none;
   user-select: none;
-  padding: 12px 8px 12px 50px;
+  padding: 12px 10px 12px 50px;
   font-weight: 400;
   text-transform: capitalize;
   cursor: pointer;
+
   position: relative;
 }
 ul li::before {
@@ -86,7 +87,7 @@ ul li::before {
   width: 24px;
   position: absolute;
   height: 24px;
-  top: 14px;
+  top: 8px;
   left: 8px;
 }
 ul li.cheched {
@@ -95,4 +96,21 @@ ul li.cheched {
 }
 ul li.cheched::before {
   background-image: url("images/checked.png");
+}
+ul li span {
+  position: absolute;
+  right: 30px;
+
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  color: #555;
+  top: 5px;
+  padding: 3px;
+  transition: 0.5s;
+  text-align: center;
+}
+ul li span:hover {
+  background-color: #edeef0;
+  border-radius: 50%;
 }
